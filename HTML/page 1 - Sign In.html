@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Miles.com</title>
+    <link rel="icon" type="image/png" href="../images/Black Miles Studio.png">
+    <link rel="stylesheet" href="../CSS/sign in - sign out.css">
+    <script src="../JavaScript/sign in - sign out.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <h3 class="heading">Sign In</h3>
+
+        <input type="text" id="u_name" class="u_name" placeholder="User name">
+
+        <input type="password" id="u_id" class="u_id" placeholder="User Id">
+
+        <input type="password" id="pass" class="pass" placeholder="Password">
+
+        <button type="submit" name="submit" class="sign" id="sign" onclick="signIn()">Sign In</button>
+
+        <div class="google"><p style="color:rgb(0, 153, 255);">G</p><p style="color:red;">o</p><p style="color: orange;">o</p><p style="color: rgb(0, 153, 255);">g</p><p style="color:green;">l</p><p style="color: red;">e</p></p></div>
+
+        <div class="facebook"><p>Facebook</p></div>
+    </div>
+
+    <div class="loading"></div>
+    <h3 class="accessGranted">Access Granted</h3>
+
+    <div class="welcome">
+        <h1 class="welText">Welcome</h1>
+
+        <button class="signOut" onclick="out()">Sign out</button>
+
+        <div class="nav">
+            <button class="menuBtn"><img style="width: 50px; height:50px;" src="../images/more btn.png" alt="menu" class="menu"></button>
+            <button class="hm" id="hm" onclick="changeHm()">Home</button>
+            <button class="sch" id="sch" onclick="changeSch()">Search</button>
+            <button class="contact" id="contact" onclick="changeContact()">Contact</button>
+            <button class="help" id="help" onclick="changeHelp()">Help</button>
+        </div>
+        <div class="divider">
+            <button class="beatzBtn" onclick="openBd()">BEATZ</button>
+            <button class="playBtn">PLAY</button>
+            <button class="songsBtn">SONGS</button>
+        </div>
+        <div class="beatzD">
+            <h3 class="chs">Choose category</h3>
+            <button class="afro" onclick="chooseAndClose1()">Afro beat</button> <br>
+            <button class="trap" onclick="chooseAndClose2()">Trap</button><br>
+            <button class="pop" onclick="chooseAndClose3()">Afro pop</button><br>
+            <button class="drill" onclick="chooseAndClose4()">Drill</button>
+        </div>
+        <h2 class="cat">All</h2>
+        
+        <div class="all">
+
+        <p class="beatTitle">Afro pop by Black Miles</p>
+        <audio class="audio" controls src="../sounds/hubert Afro pop.mp3"></audio>
+        <a class="downBtn" href="../download music files/Afro pop by Black Miles.rar" download>Download</a>
+
+        <p class="beatTitle" style="left: 65%;">Unknown name</p>
+        <audio class="audio" style="top: 15%; left: 14%;" controls src=""></audio>
+        <a class="downBtn" href="../sounds/" style="left: 87%;" download>Download</a>
+
+        <p class="beatTitle" style="top: 30%;">Unknown name</p>
+        <audio style="position: absolute; top:40%; left:5%" controls src="../sounds/"></audio>
+        <a class="downBtn" href="../sounds/" style="position:absolute; top: 40%;" download>Download</a>
+
+        <p class="beatTitle" style="position: absolute; top: 30%; left: 65%;">Unknown name</p>
+        <audio class="audio" style="position: absolute; top: 40%; left: 63.6%;" controls src=""></audio>
+        <a class="downBtn" href="../sounds/" style="top:40%; left: 86.5%;" download>Download</a>
+
+        <p class="beatTitle" style="top: 55%;">Unknown name</p>
+        <audio style="position: absolute; top:65%; left:5%" controls src="../sounds/"></audio>
+        <a class="downBtn" href="../sounds/" style="position:absolute; top: 65%;" download>Download</a>
+
+        <p class="beatTitle" style="position: absolute; top: 55%; left: 65%;">Unknown name</p>
+        <audio class="audio" style="position: absolute; top: 65%; left: 63.6%;" controls src=""></audio>
+        <a class="downBtn" href="../sounds/" style="top:65%; left: 86.5%;" download>Download</a>
+
+        <p class="beatTitle" style="top: 80%;">Unknown name</p>
+        <audio style="position: absolute; top:90%; left:5%" controls src="../sounds/"></audio>
+        <a class="downBtn" href="../sounds/" style="position:absolute; top: 90%;" download>Download</a>
+
+        <p class="beatTitle" style="position: absolute; top: 80%; left: 65%;">Unknown name</p>
+        <audio class="audio" style="position: absolute; top: 90%; left: 63.6%;" controls src=""></audio>
+        <a class="downBtn" href="../sounds/" style="top:90%; left: 86.5%;" download>Download</a>
+        </div>
+
+        <div class="game">
+            
+        </div>
+        
+    </div>
+
+    <footer style="color: indigo;">Vicky Tech Solutions Production &copy</footer>
+
+</body>
+</html>

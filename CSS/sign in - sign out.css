@@ -1,0 +1,509 @@
+body{
+    background: linear-gradient(to left ,white,gray,aqua);
+    background-repeat: repeat-y;
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: aquamarine;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: aqua;
+}
+
+
+*{
+    font-family: sans-serif;
+}
+
+.container{
+    position: relative;
+    left: 500px;
+    top: 100px;
+    width: 350px;
+    height: 450px;
+    background: linear-gradient(to left top, white,gray,aqua);
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    border-radius: 40px;
+    border: 3px solid aqua;
+    opacity: 0;
+    animation: close 2s;
+    -webkit-animation: close 2s;
+    -moz-animation: close 2s;
+    animation-play-state: paused;
+}
+
+@keyframes close {
+    0%{opacity: 1;}
+    50%{}
+    100%{}
+}
+
+.heading{
+    position: relative;
+    color: black;
+    animation: blinkn 1s infinite;
+    -webkit-animation: blinkn 1s infinite;
+    -moz-animation: blinkn 1s infinite;
+}
+
+@keyframes blinkn {
+    0%{}
+    50%{}
+    100%{opacity: 0;}
+}
+
+.u_name{
+    width: 70%;
+    height: 30px;
+    border: 2px groove black;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    font-size: 20px;
+}
+
+.u_id{
+    width: 70%;
+    height:30px;
+    border: 2px groove black;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    font-size: 20px;
+}
+
+.pass{
+    width: 70%;
+    height:30px;
+    border: 2px groove black;
+    border-radius: 10px;
+    position: absolute;
+    top: 60%;
+    font-size: 20px;
+}
+
+.sign{
+    position: absolute;
+    height: 30px;
+    background: rgb(0, 119, 255);
+    border: none;
+    border-radius: 10px;
+    top: 73%;
+    left: 70%;
+    width: 80px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+}
+
+.sign:hover{
+    background: rgb(0, 183, 255);
+}
+
+.google{
+    position: absolute;
+    top: 85%;
+    left: 5%;
+    font-weight: bold;
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5px;
+    width: 150px;
+    height: 60px;
+    display: inline-flex;
+    color:green;
+}
+
+p{
+    position: relative;
+    top: -20px;
+}
+
+.google:hover{
+    background-color: blueviolet;
+    color: red;
+}
+
+.facebook{
+    position: absolute;
+    top: 85%;
+    left: 52%;
+    font-weight: bold;
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5px;
+    width: 150px;
+    height: 60px;
+    display: inline-flex;
+}
+
+.facebook:hover{
+    background:blue;
+    color: white;
+}
+
+.loading{
+    position: absolute;
+    top: 35%;
+    left: 43%;
+    width: 200px;
+    height: 200px;
+    background: none;
+    display: none;
+    border: 5px groove aqua;
+    border-radius: 50%;
+    animation: round 6s;
+    -webkit-animation: round 6s;
+    -moz-animation: round 6s;
+    animation-delay: none;
+    animation-play-state: paused;
+}
+
+@keyframes round {
+    0%{opacity: 1;  transform: rotate(360deg);}
+    50%{border: 5px groove limegreen;}
+    75%{border: 5px groove limegreen;}
+    100%{opacity: 0;}
+}
+
+.accessGranted{
+    position: absolute;
+    color: green;
+    top: 45%;
+    left:44%;
+    font-size: 23px;
+    display: none;
+}
+
+.welcome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99%;
+    height: 99%;
+    text-align: center;
+    background: linear-gradient(to left,white,gray,aqua);
+    display:  none;
+}
+
+.welText{
+    position: absolute;
+    top: 0;
+    left: 40%;
+}
+
+.nav{
+    position: relative;
+    display: inline-flex;
+    background: linear-gradient(to left,  indigo,aqua);
+    border-bottom: 2px solid black;
+    width: 100%;
+    height: 40px;
+    top: 60px;
+    left: 0;
+    justify-content: center;
+}
+
+.hm{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    color: violet;
+    left: -250px;
+    top: 29%;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    background: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.hm:hover{
+    color: white;
+}
+
+.sch{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    left: -100px;
+    top: 29%;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.sch:hover{
+    color: white;
+}
+
+.contact{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    left: 50px;
+    top: 29%;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    background: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contact:hover{
+    color: white;
+}
+
+.help{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    color: black;
+    top: 29%;
+    left: 15%;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    background: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.help:hover{
+    color: white;
+}
+
+.divider{
+    position: relative;
+    top: 60px;
+    height: 60px;
+    background: #303030;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    }
+
+.beatzBtn{
+    position: relative;
+    background: none;
+    border: none;
+    color: indigo;
+    cursor: pointer;
+    left: -30%;
+    font-size: 40px;
+}
+.beatzBtn:hover{
+    color: white;
+}
+
+.playBtn{
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    left: -20px;
+    color: indigo;
+}
+.playBtn:hover{
+    color: white;
+}
+
+.songsBtn{
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: indigo;
+    left: 30%;
+}
+.songsBtn:hover{
+    color: white;
+    cursor: url('../images/coming soon.png'),auto;}
+
+.beatzD{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to left top,white,gray,aqua);
+    left: 12%;
+    top: 6%;
+    display: none;
+}
+
+.afro{
+    width: 100%;
+    height: 20%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: large;
+    position: relative;
+    top: 18.5%;
+}
+.afro:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.trap{
+    width: 100%;
+    height: 20%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: large;
+    position: relative;
+    top: 19.5%;
+}
+.trap:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.pop{
+    width: 100%;
+    height: 20%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: large;
+    position: relative;
+    top: 20%;
+}
+.pop:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.drill{
+    width: 100%;
+    height: 20%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: large;
+    position: relative;
+    top: 21%;
+}
+.drill:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.chs{
+    position: absolute;
+    width: 99.5%;
+    height: 17%;
+    top: -15px;
+    font-size: 15px;
+    background: #000342;
+    color: white;
+}
+
+.cat{
+    position: absolute;
+    top: 150px;
+    left: 45%;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.audio{
+    position: relative;
+    top: 15%;
+    left: -22%;
+}
+
+.downBtn{
+    position: absolute;
+    text-decoration: none;
+    top: 15%;
+    left: 28%;
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(to left,  indigo,aqua);
+    border-radius: 10px;
+    color: black;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    padding-top: 9px;
+}
+
+    .downBtn:hover{
+    background: linear-gradient(to right,  indigo,aqua);;
+}
+
+.beatTitle{
+    position: absolute;
+    top: 5%;
+    left: 100px;
+    font-size: 20px;
+}
+
+.all{
+    position: relative;
+    top: 22%;
+    width: 99%;
+    height: 100%;
+}
+
+.menuBtn{
+    background: none;
+    position: absolute;
+    top: -50px;
+    left: 30px;
+    cursor: pointer;
+    border: none;
+}
+
+.menuBtn:hover{
+    background: indigo;
+}
+
+footer{
+    position: fixed;
+    font-size: 20px;
+    top: 585px;
+    left: 39%;
+    opacity: 0.5;
+}
+
+.signOut{
+    position: absolute;
+    left: 95%;
+    top: 5px;
+    width: fit-content;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.signOut:hover{
+    background: red;
+}
+
+.game{
+    display: inline-flex;
+    width:70%;
+}
